@@ -1,0 +1,203 @@
+@import "blog_posts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: "Myriad set Pro", "Helvetica Neue", Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin-top: 20px;
+}
+
+/* our page properties: the container */
+.main-page {
+    margin: 0 auto;
+    max-width: 1024px;
+    margin-bottom: 20px;
+}
+
+.container {
+    box-shadow: 0px 0px 5px #999999;
+    background-color: #ffffff; /*f2f2f2*/
+    border-radius: 10px;
+    /*width: 400px;
+    width: 340px;*/
+    /*margin: auto;*/
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 3px 20px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-post-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.delete-button,
+.update-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.update-button {
+     background-color: #007bff;
+}
+
+.blog-post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.blog-post-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.blog-post-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.like-icon {
+    margin-right: 5px;
+}
+
+/* blog_posts.css */
+
+/*.back-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+}*/
+
+
+.arrow {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+/*.back-text {
+  font-size: 1rem;
+}*/
+
+
+
+.add-button-container,
+.back-button-container {
+    text-align: left;
+    padding: 20px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;/* 1px solid #ccc; */
+   /* border: 3px solid #f00;
+   */
+}
+
+.add-button,
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #007AFF;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover,
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+
+.like-count {
+    margin-left: 3px;
+}
+
+
+
+
+
+/* Load custom fonts from the directory */
+/* Myriad Set Pro Regular */
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("../Fonts/myriad-set-pro_text.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Myriad Set Pro Bold */
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("../Fonts/myriad-set-pro_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Myriad Set Pro Semibold */
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("../Fonts/myriad-set-pro_semibold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Myriad Set Pro Semibold */
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("../Fonts/myriad-set-pro_text-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Myriad Set Pro Thin */
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("../Fonts/myriad-set-pro_thin.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}

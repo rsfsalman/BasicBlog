@@ -1,0 +1,177 @@
+/* Style for each individual blog post */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style for the blog post title */
+.blog-post h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Style for the blog post author */
+.blog-post .author {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Style for the blog post content */
+.blog-post p {
+    font-size: 18px;
+    color: #444;
+}
+
+.post-content {
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+
+/* table */
+table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+		font-size: 18px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+/* blog post form */
+
+.post-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 580px;
+    padding: 10px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+textarea {
+    max-height: 500px;
+    max-width: 580px;
+    overflow: auto;
+}
+
+
+.buttons {
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+button[type="submit"],
+button[type="button"] {
+    /*display: block;
+    */
+    flex: 0 0 auto;
+    /*flex: 1;*/
+    padding: 3px 10px 3px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button[type="button"] {
+    /*background-color: #bbb;
+    border: 1px solid #ccc;
+    */
+
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #E8E8ED; /* #007AFF;*/
+  color: #828282; /*#fff;*
+
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+/* Button hover state */
+.button[type="button"]:hover {
+  background-color: #FF69D9;
+}
+
+/* Button active state */
+.button[type="button"]:active {
+  background-color: #0056B3;
+  box-shadow: none;
+}
+
+/* Button disabled state */
+.button[type="button"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button[type="button"]:last-child {
+    margin-right: 0;
+}

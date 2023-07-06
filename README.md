@@ -118,11 +118,13 @@ GitHub: [rsfsalman](https://github.com/rsfsalman)
 # App in Action
 #### Screenshots of BasicBlog in Operation
 ![Screenshot 1](run_1.png)
+
 *The home screen of the app showcasing the main index page, where all the blog posts are displayed.*
 <br>
 <br>
 
 ![Screenshot 2](run_2.png)
-*"An update post screen displaying the form for editing an existing blog post.*
+
+*An update post screen displaying the form for editing an existing blog post.*
 <br>
 <br>

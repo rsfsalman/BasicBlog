@@ -123,6 +123,6 @@ GitHub: [rsfsalman](https://github.com/rsfsalman)
 <br>
 
 ![Screenshot 2](run_2.png)
-*"An update post screen displaying the form for editing an existing blog post.*
+*An update post screen displaying the form for editing an existing blog post.*
 <br>
 <br>

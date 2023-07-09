@@ -23,9 +23,6 @@ body {
     box-shadow: 0px 0px 5px #999999;
     background-color: #ffffff; /*f2f2f2*/
     border-radius: 10px;
-    /*width: 400px;
-    width: 340px;*/
-    /*margin: auto;*/
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
@@ -37,14 +34,20 @@ body {
     margin-bottom: 20px;
 }
 
-.container-header h1 {
-    text-align: center;
-    margin-bottom: 20px;
+.blog-post-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
 }
 
-.blog-post-actions {
+.blog-post-footer-action{
+    position: absolute;
+    bottom: 0;
+    right: -10px;
     display: flex;
-    justify-content: flex-end;
+
     gap: 10px;
 }
 
@@ -68,8 +71,9 @@ body {
 }
 
 .blog-post-header {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -81,10 +85,19 @@ body {
 }
 
 .blog-post-footer {
+    /*border: 1px solid black;
+    */
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-top: 10px;
+
+
+    position:relative;
+
+    /*margin-top: -16px;
+    */
+
 }
 
 .like-button {

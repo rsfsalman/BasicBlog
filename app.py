@@ -139,12 +139,18 @@ def delete(post_id):
     """
     print("Delete")  # Optional print statement for debugging purposes
     blog_posts = load_from_json(file_path)
+
+    post_found = False
     for idx, post in enumerate(blog_posts):
         if post['id'] == post_id:
+            post_found = True
             del blog_posts[idx]
             break
-    save_to_json(blog_posts, file_path)
-    return redirect(url_for('index'))
+    if post_found:
+        save_to_json(blog_posts, file_path)
+        return redirect(url_for('index'))
+    else:
+        return "Post not found", 404
 
 
 @app.route('/like/<int:post_id>', methods=['POST'])
@@ -158,15 +164,21 @@ def like(post_id):
                     Redirects to the 'index' route after increasing
                     the likes count of the blog post.
     """
-    if request.method == "POST":
-        print(post_id)  # Optional print statement for debugging purposes
-        blog_posts = load_from_json(file_path)
-        for post in blog_posts:
-            reg_id = post.get('id')
-            if reg_id == post_id:
-                post['likes'] = post.get('likes', 0) + 1
+
+    print(post_id)  # Optional print statement for debugging purposes
+    blog_posts = load_from_json(file_path)
+    post_found = False
+    for post in blog_posts:
+        reg_id = post.get('id')
+        if reg_id == post_id:
+            post_found = True
+            post['likes'] = post.get('likes', 0) + 1
+            break
+    if post_found:
         save_to_json(blog_posts, file_path)
-    return redirect(url_for('index'))
+        return redirect(url_for('index'))
+    else:
+        return "Post not found", 404
 
 
 @app.route('/add', methods=['GET', 'POST'])
@@ -211,7 +223,6 @@ def index():
     """
     # add code here to fetch the job posts from a file
     blog_posts = load_from_json(file_path)
-    print("This  is redirected!!!")
     return render_template('index.html', posts=blog_posts)
 
 

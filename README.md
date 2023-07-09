@@ -64,7 +64,9 @@ To get started with the BasicBlog  application, follow these steps:
 
    <li>View a blog post</li>
    <ul style="list-style-type:disc">
-      <li>If the content of a post is long, click on Read more link.</li>
+      <li>If the content of a post is long, click on Read more 
+
+link.</li>
       <li>The post will be displayed with the author, title, content, and likes count.</li>
    </ul>
 
@@ -124,8 +126,5 @@ GitHub: [rsfsalman](https://github.com/rsfsalman)
 
 ![Screenshot 2](run_2.png)
 *An update post screen displaying the form for editing an existing blog post.*
-<<<<<<< HEAD
-=======
 <br>
->>>>>>> 096c45c8f09a2be9930b564a712a176293cdeb75
 <br>

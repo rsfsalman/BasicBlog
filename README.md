@@ -124,5 +124,8 @@ GitHub: [rsfsalman](https://github.com/rsfsalman)
 
 ![Screenshot 2](run_2.png)
 *An update post screen displaying the form for editing an existing blog post.*
+<<<<<<< HEAD
+=======
 <br>
+>>>>>>> 096c45c8f09a2be9930b564a712a176293cdeb75
 <br>
